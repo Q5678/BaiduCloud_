@@ -1,0 +1,8 @@
+#!name=❏ 百度网盘
+#!desc=百度网盘 解锁在线视频倍率/清晰度
+[Script]
+
+百度云盘 = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bdcloud.js
+
+[MITM]
+hostname = %APPEND% pan.baidu.com
